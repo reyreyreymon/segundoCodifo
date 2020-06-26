@@ -1,0 +1,7 @@
+.form-control{
+
+}
+.empleado{
+  display: flex;
+  flex-wrap: wrap;
+}

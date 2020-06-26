@@ -1,0 +1,29 @@
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/img/computer-icons-discounts-and-allowances-sales-red-sale-lable.png');
+  background-size: cover;
+
+}
+
+.des{
+  margin: 20px;
+}
+
+.mat-card{
+  padding: 5px;
+  margin: 10px;
+}
+
+
+.lider{
+  width: 40%;
+}
+
+.presentacion{
+  padding: 20px;
+  background-image: url("../../../assets/img/fondo1.png");
+  background-size: cover;
+}

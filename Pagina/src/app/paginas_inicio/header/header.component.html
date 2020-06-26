@@ -1,0 +1,34 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="onToggleSidenav()" fxShow="true" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div>
+      <a routerLink="/home"><img class="logo" src="../../../assets/img/logo4.png" alt=""></a>
+    </div>
+    <span class="menu-spacer"></span>
+    <div fxShow="true" fxHide.lt-md class="row text-justify">
+      <div>
+        <a routerLink="/inicio">Inicio</a>
+        <a routerLink="/acercade">Acerca de</a>
+        <a routerLink="/contacto">Contacto</a>
+        <a routerLink="/preguntasf">Preguntas Frecuentes</a>
+        <a [matMenuTriggerFor]="appMenu" *ngIf="admin_login" id="ad">Admin</a>
+        <mat-menu #appMenu="matMenu">
+          <button mat-menu-item routerLink="/empleados_a">Empleados</button>
+          <button mat-menu-item routerLink="/productos_a">Productos</button>
+          <button mat-menu-item routerLink="/analisis_a">Estadisticas</button>
+        </mat-menu>
+        <a [matMenuTriggerFor]="appMenu1" *ngIf="vendedor_login" id="ad">Vendedor</a>
+        <mat-menu #appMenu1="matMenu">
+          <button mat-menu-item routerLink="/empleados_v">Empleados</button>
+          <button mat-menu-item routerLink="/productos_v">Productos</button>
+          <button mat-menu-item routerLink="/analisis_v">Estadisticas</button>
+        </mat-menu>
+      </div>
+      <div>
+        <a routerLink="/home">Iniciar sesion</a>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

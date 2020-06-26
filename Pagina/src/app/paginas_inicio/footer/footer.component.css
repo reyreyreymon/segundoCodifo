@@ -1,0 +1,40 @@
+.pie3{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+.pie3 a{
+  padding: 5px;
+}
+.pie4{
+  background-color: #000000bb;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+
+@media only screen and (min-width: 340px){
+
+  .pie3{
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 780px){
+
+  .pie3{
+    padding: 20px 10px;
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+  .pie3{
+    padding: 20px 10px;
+    font-size: 20px;
+  }
+}

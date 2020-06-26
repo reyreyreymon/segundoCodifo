@@ -1,0 +1,34 @@
+<div class="text-right">
+  <button class="btn btn-light ml-10" style="font-size: 30px;"><i class="fa fa-play-circle"></i></button>
+  <button class="btn btn-light ml-10" style="font-size: 30px;"><i class="fa fa-pause-circle"></i></button>
+  <button class="btn btn-light ml-10" style="font-size: 30px;"><i class="fa fa-reply"></i></button>
+</div>
+
+<div class="container p-2">
+  <h2 class="text-center">EMPLEADOS</h2>
+</div>
+
+<div class="empleado m-3">
+  <div class="row w-100 m-2">
+    <div class="col-md-3 mb-2" *ngFor="let item of empleados">
+      <div class="card text-left border-primary mb-3">
+        <div class="card-body">
+          <div class="card-title">
+            Nombre: {{item.nombre}}
+          </div>
+          <div class="card-title">
+            Apellido: {{item.apellido}}
+          </div>
+          <div class="card-title">
+            Ano de Nacimiento: {{item.ano}}
+          </div>
+          <div class="card-title">
+            Puesto: {{item.puesto}}
+          </div>
+          <div class="card-subtitle">
+            Salario: {{item.salario}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

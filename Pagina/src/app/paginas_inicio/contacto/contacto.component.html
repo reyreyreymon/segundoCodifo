@@ -1,0 +1,42 @@
+<div class="text-right">
+  <button class="btn btn-light ml-10" style="font-size: 30px;"><i class="fa fa-play-circle"></i></button>
+  <button class="btn btn-light ml-10" style="font-size: 30px;"><i class="fa fa-pause-circle"></i></button>
+  <button class="btn btn-light ml-10" style="font-size: 30px;"><i class="fa fa-reply"></i></button>
+</div>
+
+<div class="">
+  <mat-card-header>
+    <mat-card-title>Formulario de contacto </mat-card-title>
+  </mat-card-header>
+<mat-card-content>
+  <form id="contactForm" [formGroup]="form" (ngSubmit)="submit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Nombre:</mat-label>
+    <input matInput required formControlName="firstname" class="form-control"  name="firstname">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Apellido:</mat-label>
+    <input matInput formControlName="lastname" class="form-control"  name="lastname">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Mensaje</mat-label>
+    <textarea matInput required formControlName="message" class="form-control"  name="message"></textarea>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your email</mat-label>
+    <input matInput placeholder="pat@example.com" required formControlName="email" class="form-control"  name="email">
+    
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" matBadgeColor="accent">
+    Enviar
+  </button>
+
+   </form>
+</mat-card-content>
+<hr>
+  <p class="text-muted">Este formulario te puede ayudar para hacer cotizaciones, pedidos o crititcas constructivas.</p>
+</div>
